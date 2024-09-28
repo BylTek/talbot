@@ -18,7 +18,7 @@ export default function Header() {
       </div>
       <div className="">
         <p className="text-xs lg:text-sm bg-red-600 text-white font-bold p-1 md:p-2 rounded">
-          L&apos;utilisation de ce chatbot IA est à votre discrétion.
+          L&apos;utilisation de ce chatbot est à votre discrétion.
         </p>
       </div>
     </nav>

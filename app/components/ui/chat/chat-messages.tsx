@@ -4,6 +4,12 @@ import ChatActions from "./chat-actions";
 import ChatMessage from "./chat-message";
 import { ChatHandler } from "./chat.interface";
 
+const initMsg = {
+  id: "1",
+  content: "Bonjour! Comment puis-je vous aider aujourd'hui en matière de droit du Tribunal Administratif du Logement du Québec?",
+  role: "assistant"
+}
+
 export default function ChatMessages(
   props: Pick<ChatHandler, "messages" | "isLoading" | "reload" | "stop">,
 ) {
@@ -34,6 +40,7 @@ export default function ChatMessages(
         className="flex h-[50vh] flex-col gap-5 divide-y overflow-y-auto pb-4"
         ref={scrollableChatContainerRef}
       >
+        <ChatMessage {...initMsg} />
         {props.messages.map((m) => (
           <ChatMessage key={m.id} {...m} />
         ))}

@@ -6,8 +6,8 @@ import GoogleAnalytics from "./components/googleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Immig",
-  description: "Anything about immigration processes",
+  title: "TAL-BOT",
+  description: "Tout sur la loi et les réglements du Tribunal Adminstratif du Logement ",
 };
 
 export default function RootLayout({
